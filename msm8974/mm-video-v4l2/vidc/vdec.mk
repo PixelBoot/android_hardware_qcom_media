@@ -117,7 +117,6 @@ LOCAL_C_INCLUDES                += $(libmm-vdec-inc)
 LOCAL_SHARED_LIBRARIES  := liblog libutils libui libbinder libcutils libdl
 
 LOCAL_SHARED_LIBRARIES  += libdivxdrmdecrypt
-LOCAL_SHARED_LIBRARIES  += libqdMetaData
 
 LOCAL_SRC_FILES         := vdec/src/frameparser.cpp
 LOCAL_SRC_FILES         += vdec/src/h264_utils.cpp
