@@ -20,7 +20,7 @@ LOCAL_MODULE:= libdivxdrmdecrypt
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_SHARED_LIBRARIES	:= liblog libdl
-LOCAL_HEADER_LIBRARIES  := copybit_headers gralloc_headers
+LOCAL_HEADER_LIBRARIES  := copybit_headers gralloc_headers  media_plugin_headers
 
 LOCAL_LDLIBS +=
 include $(BUILD_SHARED_LIBRARY)
