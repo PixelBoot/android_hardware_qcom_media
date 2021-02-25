@@ -5,9 +5,6 @@ include $(CLEAR_VARS)
 #            Deploy the headers that can be exposed
 #===============================================================================
 
-LOCAL_COPY_HEADERS_TO   := mm-video-v4l2/DivxDrmDecrypt
-LOCAL_COPY_HEADERS      := inc/DivXDrmDecrypt.h
-
 LOCAL_CFLAGS := \
     -D_ANDROID_
 
@@ -23,6 +20,7 @@ LOCAL_MODULE:= libdivxdrmdecrypt
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_SHARED_LIBRARIES	:= liblog libdl
+LOCAL_HEADER_LIBRARIES  := copybit_headers gralloc_headers
 
 LOCAL_LDLIBS +=
 include $(BUILD_SHARED_LIBRARY)
