@@ -22,6 +22,8 @@ LOCAL_SRC_FILES := \
 
 LOCAL_CFLAGS := $(PV_CFLAGS_MINUS_VISIBILITY)
 
+LOCAL_HEADER_LIBRARIES := media_plugin_headers
+
 LOCAL_C_INCLUDES:= \
         frameworks/native/include/media/openmax \
         frameworks/native/include/media/hardware
